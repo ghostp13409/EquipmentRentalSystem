@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1F557E5C-A9E8-4408-93CA-1CD8713124BE}|Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2.csproj|d:\\work\\projects\\equipmentrentalsystem\\backend\\midterm_equipmentrental_group2\\midterm_equipmentrental_group2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F557E5C-A9E8-4408-93CA-1CD8713124BE}|Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2.csproj|solutionrelative:midterm_equipmentrental_group2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\Program.cs",
+              "RelativeDocumentMoniker": "Midterm_EquipmentRental_Group2\\Program.cs",
+              "ToolTip": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\Program.cs",
+              "RelativeToolTip": "Midterm_EquipmentRental_Group2\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-12T18:21:39.783Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
