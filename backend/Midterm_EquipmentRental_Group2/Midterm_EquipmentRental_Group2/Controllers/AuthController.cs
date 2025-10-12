@@ -32,6 +32,13 @@ namespace Midterm_EquipmentRental_Group2.Controllers
             return Ok(new { Token = token, Role = user.Role });
         }
 
+        [HttpGet("users")]
+        public IActionResult GetUsers()
+        {
+            var users = _context.Users.Select(u => new { u.Id, u.Username, u.Role }).ToList();
+            return Ok(users);
+        }
+
         private object GenerateJwtToken(User user)
         {
             var claims = new[]
