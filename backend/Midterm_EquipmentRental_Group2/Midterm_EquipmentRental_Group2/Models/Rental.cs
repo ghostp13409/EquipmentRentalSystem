@@ -25,7 +25,6 @@ namespace Midterm_EquipmentRental_Group2.Models
 
         public Condition ConditionOnReturn { get; set; }
         public string Notes { get; set; }
-        public Status Status => ReturnedAt.HasValue ? Status.Completed :
-               (DueDate < DateTime.UtcNow ? Status.Overdue : Status.Active);
+        public Status Status { get; set; }
     }
 }

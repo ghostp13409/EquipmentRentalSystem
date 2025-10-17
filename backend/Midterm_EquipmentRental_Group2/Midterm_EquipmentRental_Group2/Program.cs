@@ -1,10 +1,15 @@
 using Microsoft.EntityFrameworkCore;
 using Midterm_EquipmentRental_Group2.Data;
+using Midterm_EquipmentRental_Group2.Repositories;
+using Midterm_EquipmentRental_Group2.Repositories.Interfaces;
+using Midterm_EquipmentRental_Group2.UnitOfWork;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddDbContext<AppDbContext>(options => options.UseInMemoryDatabase("MidtermProjectGoup2Db"));
+
+
 
 // Add Jwt Authentication
 builder.Services.AddAuthentication("Bearer")
@@ -29,6 +34,10 @@ builder.Services.AddAuthorization(options =>
 });
 
 // Add Repositoreis and Unit of Work
+builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
+builder.Services.AddScoped<IEquipmentRepository, EquipmentRepository>();
+builder.Services.AddScoped<IRentalRepository, RentalRepository>();
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -52,6 +61,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseAuthentication();
 
 app.UseAuthorization();
 

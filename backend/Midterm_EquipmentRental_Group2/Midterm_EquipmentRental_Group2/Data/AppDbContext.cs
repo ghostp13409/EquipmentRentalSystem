@@ -31,11 +31,11 @@ namespace Midterm_EquipmentRental_Group2.Data
 
             // Seed Equipment
             modelBuilder.Entity<Equipment>().HasData(
-                new Equipment { Id = 1, Name = "Excavator", Description = "Heavy-duty digging machine", Category = Category.HeavyMachinery, Condition = Condition.Good, RentalPrice = 150.00m, IsAvailable = true },
-                new Equipment { Id = 2, Name = "Power Drill", Description = "Cordless drill for construction", Category = Category.PowerTools, Condition = Condition.Excellent, RentalPrice = 25.00m, IsAvailable = true },
-                new Equipment { Id = 3, Name = "Dump Truck", Description = "Large vehicle for hauling", Category = Category.Vehicles, Condition = Condition.Fair, RentalPrice = 200.00m, IsAvailable = false },
-                new Equipment { Id = 4, Name = "Safety Helmet", Description = "Protective headgear", Category = Category.Safety, Condition = Condition.New, RentalPrice = 10.00m, IsAvailable = true },
-                new Equipment { Id = 5, Name = "Surveying Tool", Description = "Precision measuring device", Category = Category.Surveying, Condition = Condition.Poor, RentalPrice = 50.00m, IsAvailable = true }
+                new Equipment { Id = 1, Name = "Excavator", Description = "Heavy-duty digging machine", Category = Category.HeavyMachinery, Condition = Condition.Good, RentalPrice = 150.00m, IsAvailable = true, ImageUrl= "https://www.shutterstock.com/image-vector/wrench-spanner-vector-icon-flat-sign-2263882423" },
+                new Equipment { Id = 2, Name = "Power Drill", Description = "Cordless drill for construction", Category = Category.PowerTools, Condition = Condition.Excellent, RentalPrice = 25.00m, IsAvailable = true, ImageUrl= "https://www.shutterstock.com/image-vector/wrench-spanner-vector-icon-flat-sign-2263882423" },
+                new Equipment { Id = 3, Name = "Dump Truck", Description = "Large vehicle for hauling", Category = Category.Vehicles, Condition = Condition.Fair, RentalPrice = 200.00m, IsAvailable = false, ImageUrl= "https://www.shutterstock.com/image-vector/wrench-spanner-vector-icon-flat-sign-2263882423" },
+                new Equipment { Id = 4, Name = "Safety Helmet", Description = "Protective headgear", Category = Category.Safety, Condition = Condition.New, RentalPrice = 10.00m, IsAvailable = true, ImageUrl= "https://www.shutterstock.com/image-vector/wrench-spanner-vector-icon-flat-sign-2263882423" },
+                new Equipment { Id = 5, Name = "Surveying Tool", Description = "Precision measuring device", Category = Category.Surveying, Condition = Condition.Poor, RentalPrice = 50.00m, IsAvailable = true , ImageUrl = "https://www.shutterstock.com/image-vector/wrench-spanner-vector-icon-flat-sign-2263882423" }
             );
 
             // Seed Rentals

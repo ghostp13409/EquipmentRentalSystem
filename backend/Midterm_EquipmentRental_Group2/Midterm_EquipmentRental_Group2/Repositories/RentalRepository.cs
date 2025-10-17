@@ -13,7 +13,7 @@ namespace Midterm_EquipmentRental_Group2.Repositories
             _context = context;
         }
 
-        public IEnumerable<Rental> GetAllRentals()
+        public IEnumerable<Rental> GetAll()
         {
             return _context.Rentals.ToList();
         }
@@ -23,15 +23,15 @@ namespace Midterm_EquipmentRental_Group2.Repositories
             return _context.Rentals.Where(r => r.CustomerId == customerId).ToList();
         }
 
-        public Rental? GetRentalById(int id)
+        public Rental? GetById(int id)
         {
             return _context.Rentals.Find(id);
         }
-        public void AddRental(Rental rental)
+        public void Add(Rental rental)
         {
             _context.Rentals.Add(rental);
         }
-        public void DeleteRental(int id)
+        public void Delete(int id)
         {
             var rental = _context.Rentals.Find(id);
             if (rental != null)
@@ -39,7 +39,7 @@ namespace Midterm_EquipmentRental_Group2.Repositories
                 _context.Rentals.Remove(rental);
             }
         }
-        public void UpdateRental(Rental rental)
+        public void Update(Rental rental)
         {
             _context.Rentals.Update(rental);
         }
@@ -63,10 +63,9 @@ namespace Midterm_EquipmentRental_Group2.Repositories
         {
             return _context.Rentals.Where(r => r.EquipmentId == equipmentId).ToList();
         }
-
-        public IEnumerable<Rental> GetRentalByCustomer(int customerId)
+        public bool HasActiveRental(int customerId)
         {
-            return _context.Rentals.Where(r => r.CustomerId == customerId).ToList();
+            return _context.Rentals.Any(r => r.CustomerId == customerId && r.ReturnedAt == null);
         }
     }
 }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Midterm_EquipmentRental_Group2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+19394635e2ce78852837126a1599a8aeafb8de6b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f546ee0625e49caffd3613de61148ea9393c1772")]
 [assembly: System.Reflection.AssemblyProductAttribute("Midterm_EquipmentRental_Group2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Midterm_EquipmentRental_Group2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using Midterm_EquipmentRental_Group2.Data;
@@ -8,15 +8,15 @@ using System.Security.Claims;
 
 namespace Midterm_EquipmentRental_Group2.Controllers
 {
-	[Route("api/[controller]")]
-	[ApiController]
-	public class AuthController : ControllerBase
-	{
-		AppDbContext _context;
+    [Route("api/[controller]")]
+    [ApiController]
+    public class AuthController : ControllerBase
+    {
+        AppDbContext _context;
 
-		public AuthController(AppDbContext context)
-		{
-			_context = context;
+        public AuthController(AppDbContext context)
+        {
+            _context = context;
         }
 
         [HttpPost("login")]
@@ -43,8 +43,9 @@ namespace Midterm_EquipmentRental_Group2.Controllers
         {
             var claims = new[]
             {
-                new Claim(System.Security.Claims.ClaimTypes.Name, customer.Username),
-                new Claim(System.Security.Claims.ClaimTypes.Role, customer.Role.ToString())
+                new Claim("UserId", customer.Id.ToString()),
+                new Claim(ClaimTypes.Name, customer.Username),
+                new Claim(ClaimTypes.Role, customer.Role.ToString()),
             };
 
             var key = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes("YourSecretKeyHere1234567890Something"));

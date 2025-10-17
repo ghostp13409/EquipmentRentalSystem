@@ -14,23 +14,23 @@ namespace Midterm_EquipmentRental_Group2.Repositories
             _context = context;
         }
 
-        public IEnumerable<Equipment> GetAllEquipment()
+        public IEnumerable<Equipment> GetAll()
         {
             return _context.Equipments.ToList();
         }
 
-        public Equipment GetEquipmentById(int id)
+        public Equipment GetById(int id)
         {
             return _context.Equipments.Find(id);
         }
 
-        public void AddEquipment(Equipment equipment)
+        public void Add(Equipment equipment)
         {
             _context.Equipments.Add(equipment);
         }
 
 
-        public void DeleteEquipment(int id)
+        public void Delete(int id)
         {
             var equipment = _context.Equipments.Find(id);
             if (equipment != null)
@@ -40,7 +40,7 @@ namespace Midterm_EquipmentRental_Group2.Repositories
 
         }
 
-        public void UpdateEquipment(Equipment equipment)
+        public void Update(Equipment equipment)
         {
             _context.Equipments.Update(equipment);
         }

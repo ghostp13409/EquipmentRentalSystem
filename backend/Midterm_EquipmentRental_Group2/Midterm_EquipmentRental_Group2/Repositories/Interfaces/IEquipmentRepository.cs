@@ -2,18 +2,8 @@
 
 namespace Midterm_EquipmentRental_Group2.Repositories.Interfaces
 {
-    public interface IEquipmentRepository
+    public interface IEquipmentRepository : IRepository<Equipment>
     {
-        IEnumerable<Equipment> GetAllEquipment();
-
-        Equipment GetEquipmentById(int id);
-
-        void AddEquipment(Equipment equipment);
-
-        void UpdateEquipment(Equipment equipment);
-
-        void DeleteEquipment(int id);
-
         IEnumerable<Equipment> GetAvailableEquipment();
 
         IEnumerable<Equipment> GetRentedEquipment();
