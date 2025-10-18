@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 18
 VisualStudioVersion = 18.0.11018.127
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Midterm_EquipmentRental_Group2", "Midterm_EquipmentRental_Group2\Midterm_EquipmentRental_Group2.csproj", "{4D1B1047-48A3-FB28-784F-3187D099B00C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "Midterm_EquipmentRental_Group2\Server.csproj", "{4D1B1047-48A3-FB28-784F-3187D099B00C}"
 EndProject
-Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "client", "client\client.esproj", "{5DC3FCCF-9129-207D-CAD8-1B96C9FA47E2}"
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "Client", "client\Client.esproj", "{5DC3FCCF-9129-207D-CAD8-1B96C9FA47E2}"
 	ProjectSection(ProjectDependencies) = postProject
 		{4D1B1047-48A3-FB28-784F-3187D099B00C} = {4D1B1047-48A3-FB28-784F-3187D099B00C}
 	EndProjectSection

@@ -52,7 +52,6 @@ export default function Profile() {
   }, [userId]);
 
   const handleSave = async () => {
-    console.log('=== handleSave called ===');
     console.log('Customer:', customer);
     console.log('EditForm:', editForm);
     

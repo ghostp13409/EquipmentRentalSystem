@@ -1343,9 +1343,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2.csproj",
-      "projectName": "Midterm_EquipmentRental_Group2",
-      "projectPath": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2.csproj",
+      "projectUniqueName": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\Server.csproj",
+      "projectName": "Server",
+      "projectPath": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\Server.csproj",
       "packagesPath": "C:\\Users\\DayDreamer\\.nuget\\packages\\",
       "outputPath": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\obj\\",
       "projectStyle": "PackageReference",

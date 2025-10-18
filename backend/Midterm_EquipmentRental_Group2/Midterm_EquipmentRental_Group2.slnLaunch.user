@@ -3,11 +3,11 @@
     "Name": "New Profile",
     "Projects": [
       {
-        "Path": "Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2.csproj",
+        "Path": "Midterm_EquipmentRental_Group2\\Server.csproj",
         "Action": "StartWithoutDebugging"
       },
       {
-        "Path": "client\\client.esproj",
+        "Path": "client\\Client.esproj",
         "Action": "StartWithoutDebugging"
       }
     ]
@@ -16,11 +16,11 @@
     "Name": "New Profile (1)",
     "Projects": [
       {
-        "Path": "Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2.csproj",
+        "Path": "Midterm_EquipmentRental_Group2\\Server.csproj",
         "Action": "StartWithoutDebugging"
       },
       {
-        "Path": "client\\client.esproj",
+        "Path": "client\\Client.esproj",
         "Action": "StartWithoutDebugging"
       }
     ]

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Guog5zQ3YyY=",
+  "dgSpecHash": "fBXRxkhYPsE=",
   "success": true,
-  "projectFilePath": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2.csproj",
+  "projectFilePath": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\Server.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DayDreamer\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\8.0.20\\microsoft.aspnetcore.authentication.jwtbearer.8.0.20.nupkg.sha512",
     "C:\\Users\\DayDreamer\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.20\\microsoft.entityframeworkcore.8.0.20.nupkg.sha512",
