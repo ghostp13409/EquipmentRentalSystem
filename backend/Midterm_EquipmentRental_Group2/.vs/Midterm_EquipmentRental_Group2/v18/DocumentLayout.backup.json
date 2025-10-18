@@ -3,44 +3,56 @@
   "WorkspaceRootPath": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4D1B1047-48A3-FB28-784F-3187D099B00C}|Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2.csproj|d:\\work\\projects\\equipmentrentalsystem\\backend\\midterm_equipmentrental_group2\\midterm_equipmentrental_group2\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D1B1047-48A3-FB28-784F-3187D099B00C}|Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2.csproj|solutionrelative:midterm_equipmentrental_group2\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4D1B1047-48A3-FB28-784F-3187D099B00C}|Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2.csproj|d:\\work\\projects\\equipmentrentalsystem\\backend\\midterm_equipmentrental_group2\\midterm_equipmentrental_group2\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D1B1047-48A3-FB28-784F-3187D099B00C}|Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2.csproj|solutionrelative:midterm_equipmentrental_group2\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4D1B1047-48A3-FB28-784F-3187D099B00C}|Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2.csproj|d:\\work\\projects\\equipmentrentalsystem\\backend\\midterm_equipmentrental_group2\\midterm_equipmentrental_group2\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D1B1047-48A3-FB28-784F-3187D099B00C}|Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2.csproj|solutionrelative:midterm_equipmentrental_group2\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4D1B1047-48A3-FB28-784F-3187D099B00C}|Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2.csproj|d:\\work\\projects\\equipmentrentalsystem\\backend\\midterm_equipmentrental_group2\\midterm_equipmentrental_group2\\models\\equipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D1B1047-48A3-FB28-784F-3187D099B00C}|Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2.csproj|solutionrelative:midterm_equipmentrental_group2\\models\\equipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4D1B1047-48A3-FB28-784F-3187D099B00C}|Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2.csproj|d:\\work\\projects\\equipmentrentalsystem\\backend\\midterm_equipmentrental_group2\\midterm_equipmentrental_group2\\controllers\\rentalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4D1B1047-48A3-FB28-784F-3187D099B00C}|Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2.csproj|solutionrelative:midterm_equipmentrental_group2\\controllers\\rentalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4D1B1047-48A3-FB28-784F-3187D099B00C}|Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2.csproj|d:\\work\\projects\\equipmentrentalsystem\\backend\\midterm_equipmentrental_group2\\midterm_equipmentrental_group2\\models\\extendrentalrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D1B1047-48A3-FB28-784F-3187D099B00C}|Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2.csproj|solutionrelative:midterm_equipmentrental_group2\\models\\extendrentalrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D1B1047-48A3-FB28-784F-3187D099B00C}|Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2.csproj|d:\\work\\projects\\equipmentrentalsystem\\backend\\midterm_equipmentrental_group2\\midterm_equipmentrental_group2\\models\\returnrentalrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D1B1047-48A3-FB28-784F-3187D099B00C}|Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2.csproj|solutionrelative:midterm_equipmentrental_group2\\models\\returnrentalrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4D1B1047-48A3-FB28-784F-3187D099B00C}|Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2.csproj|d:\\work\\projects\\equipmentrentalsystem\\backend\\midterm_equipmentrental_group2\\midterm_equipmentrental_group2\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D1B1047-48A3-FB28-784F-3187D099B00C}|Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2.csproj|solutionrelative:midterm_equipmentrental_group2\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4D1B1047-48A3-FB28-784F-3187D099B00C}|Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2.csproj|d:\\work\\projects\\equipmentrentalsystem\\backend\\midterm_equipmentrental_group2\\midterm_equipmentrental_group2\\controllers\\equipmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4D1B1047-48A3-FB28-784F-3187D099B00C}|Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2.csproj|solutionrelative:midterm_equipmentrental_group2\\controllers\\equipmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4D1B1047-48A3-FB28-784F-3187D099B00C}|Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2.csproj|d:\\work\\projects\\equipmentrentalsystem\\backend\\midterm_equipmentrental_group2\\midterm_equipmentrental_group2\\models\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D1B1047-48A3-FB28-784F-3187D099B00C}|Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2.csproj|solutionrelative:midterm_equipmentrental_group2\\models\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4D1B1047-48A3-FB28-784F-3187D099B00C}|Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2.csproj|d:\\work\\projects\\equipmentrentalsystem\\backend\\midterm_equipmentrental_group2\\midterm_equipmentrental_group2\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D1B1047-48A3-FB28-784F-3187D099B00C}|Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2.csproj|solutionrelative:midterm_equipmentrental_group2\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4D1B1047-48A3-FB28-784F-3187D099B00C}|Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2.csproj|d:\\work\\projects\\equipmentrentalsystem\\backend\\midterm_equipmentrental_group2\\midterm_equipmentrental_group2\\models\\rental.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4D1B1047-48A3-FB28-784F-3187D099B00C}|Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2.csproj|solutionrelative:midterm_equipmentrental_group2\\models\\rental.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4D1B1047-48A3-FB28-784F-3187D099B00C}|Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2.csproj|d:\\work\\projects\\equipmentrentalsystem\\backend\\midterm_equipmentrental_group2\\midterm_equipmentrental_group2\\models\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D1B1047-48A3-FB28-784F-3187D099B00C}|Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2.csproj|solutionrelative:midterm_equipmentrental_group2\\models\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4D1B1047-48A3-FB28-784F-3187D099B00C}|Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2.csproj|d:\\work\\projects\\equipmentrentalsystem\\backend\\midterm_equipmentrental_group2\\midterm_equipmentrental_group2\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D1B1047-48A3-FB28-784F-3187D099B00C}|Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2.csproj|solutionrelative:midterm_equipmentrental_group2\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4D1B1047-48A3-FB28-784F-3187D099B00C}|Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2.csproj|d:\\work\\projects\\equipmentrentalsystem\\backend\\midterm_equipmentrental_group2\\midterm_equipmentrental_group2\\models\\equipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D1B1047-48A3-FB28-784F-3187D099B00C}|Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2.csproj|solutionrelative:midterm_equipmentrental_group2\\models\\equipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5DC3FCCF-9129-207D-CAD8-1B96C9FA47E2}|client\\client.esproj|d:\\work\\projects\\equipmentrentalsystem\\backend\\midterm_equipmentrental_group2\\client\\client.esproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{5DC3FCCF-9129-207D-CAD8-1B96C9FA47E2}|client\\client.esproj|solutionrelative:client\\client.esproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5DC3FCCF-9129-207D-CAD8-1B96C9FA47E2}|client\\client.esproj|d:\\work\\projects\\equipmentrentalsystem\\backend\\midterm_equipmentrental_group2\\client\\vite.config.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{5DC3FCCF-9129-207D-CAD8-1B96C9FA47E2}|client\\client.esproj|solutionrelative:client\\vite.config.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D1B1047-48A3-FB28-784F-3187D099B00C}|Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2.csproj|d:\\work\\projects\\equipmentrentalsystem\\backend\\midterm_equipmentrental_group2\\midterm_equipmentrental_group2\\midterm_equipmentrental_group2.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{4D1B1047-48A3-FB28-784F-3187D099B00C}|Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2.csproj|solutionrelative:midterm_equipmentrental_group2\\midterm_equipmentrental_group2.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D1B1047-48A3-FB28-784F-3187D099B00C}|Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2.csproj|d:\\work\\projects\\equipmentrentalsystem\\backend\\midterm_equipmentrental_group2\\midterm_equipmentrental_group2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D1B1047-48A3-FB28-784F-3187D099B00C}|Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2.csproj|solutionrelative:midterm_equipmentrental_group2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D1B1047-48A3-FB28-784F-3187D099B00C}|Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2.csproj|d:\\work\\projects\\equipmentrentalsystem\\backend\\midterm_equipmentrental_group2\\midterm_equipmentrental_group2\\models\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D1B1047-48A3-FB28-784F-3187D099B00C}|Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2.csproj|solutionrelative:midterm_equipmentrental_group2\\models\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4D1B1047-48A3-FB28-784F-3187D099B00C}|Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2.csproj|d:\\work\\projects\\equipmentrentalsystem\\backend\\midterm_equipmentrental_group2\\midterm_equipmentrental_group2\\repositories\\interfaces\\iequipmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -67,20 +79,8 @@
       "RelativeMoniker": "D:0:0:{4D1B1047-48A3-FB28-784F-3187D099B00C}|Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2.csproj|solutionrelative:midterm_equipmentrental_group2\\repositories\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4D1B1047-48A3-FB28-784F-3187D099B00C}|Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2.csproj|d:\\work\\projects\\equipmentrentalsystem\\backend\\midterm_equipmentrental_group2\\midterm_equipmentrental_group2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D1B1047-48A3-FB28-784F-3187D099B00C}|Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2.csproj|solutionrelative:midterm_equipmentrental_group2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D1B1047-48A3-FB28-784F-3187D099B00C}|Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2.csproj|d:\\work\\projects\\equipmentrentalsystem\\backend\\midterm_equipmentrental_group2\\midterm_equipmentrental_group2\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D1B1047-48A3-FB28-784F-3187D099B00C}|Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2.csproj|solutionrelative:midterm_equipmentrental_group2\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4D1B1047-48A3-FB28-784F-3187D099B00C}|Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2.csproj|d:\\work\\projects\\equipmentrentalsystem\\backend\\midterm_equipmentrental_group2\\midterm_equipmentrental_group2\\repositories\\equipmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4D1B1047-48A3-FB28-784F-3187D099B00C}|Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2.csproj|solutionrelative:midterm_equipmentrental_group2\\repositories\\equipmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D1B1047-48A3-FB28-784F-3187D099B00C}|Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2.csproj|d:\\work\\projects\\equipmentrentalsystem\\backend\\midterm_equipmentrental_group2\\midterm_equipmentrental_group2\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D1B1047-48A3-FB28-784F-3187D099B00C}|Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2.csproj|solutionrelative:midterm_equipmentrental_group2\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4D1B1047-48A3-FB28-784F-3187D099B00C}|Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2.csproj|d:\\work\\projects\\equipmentrentalsystem\\backend\\midterm_equipmentrental_group2\\midterm_equipmentrental_group2\\unitofwork\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -97,10 +97,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{4D1B1047-48A3-FB28-784F-3187D099B00C}|Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2.csproj|d:\\work\\projects\\equipmentrentalsystem\\backend\\midterm_equipmentrental_group2\\midterm_equipmentrental_group2\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{4D1B1047-48A3-FB28-784F-3187D099B00C}|Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2.csproj|solutionrelative:midterm_equipmentrental_group2\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D1B1047-48A3-FB28-784F-3187D099B00C}|Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2.csproj|d:\\work\\projects\\equipmentrentalsystem\\backend\\midterm_equipmentrental_group2\\midterm_equipmentrental_group2\\midterm_equipmentrental_group2.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{4D1B1047-48A3-FB28-784F-3187D099B00C}|Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2.csproj|solutionrelative:midterm_equipmentrental_group2\\midterm_equipmentrental_group2.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -110,7 +106,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -118,80 +114,67 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ExtendRentalRequest.cs",
-              "DocumentMoniker": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\Models\\ExtendRentalRequest.cs",
-              "RelativeDocumentMoniker": "Midterm_EquipmentRental_Group2\\Models\\ExtendRentalRequest.cs",
-              "ToolTip": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\Models\\ExtendRentalRequest.cs",
-              "RelativeToolTip": "Midterm_EquipmentRental_Group2\\Models\\ExtendRentalRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-17T18:48:05.899Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ReturnRentalRequest.cs",
-              "DocumentMoniker": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\Models\\ReturnRentalRequest.cs",
-              "RelativeDocumentMoniker": "Midterm_EquipmentRental_Group2\\Models\\ReturnRentalRequest.cs",
-              "ToolTip": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\Models\\ReturnRentalRequest.cs",
-              "RelativeToolTip": "Midterm_EquipmentRental_Group2\\Models\\ReturnRentalRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-17T18:47:36.99Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Rental.cs",
-              "DocumentMoniker": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\Models\\Rental.cs",
-              "RelativeDocumentMoniker": "Midterm_EquipmentRental_Group2\\Models\\Rental.cs",
-              "ToolTip": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\Models\\Rental.cs",
-              "RelativeToolTip": "Midterm_EquipmentRental_Group2\\Models\\Rental.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAUwBoAAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-12T19:23:30.689Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 1,
               "Title": "Equipment.cs",
               "DocumentMoniker": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\Models\\Equipment.cs",
               "RelativeDocumentMoniker": "Midterm_EquipmentRental_Group2\\Models\\Equipment.cs",
               "ToolTip": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\Models\\Equipment.cs",
               "RelativeToolTip": "Midterm_EquipmentRental_Group2\\Models\\Equipment.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-12T19:23:12.755Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "LoginRequest.cs",
-              "DocumentMoniker": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\Models\\LoginRequest.cs",
-              "RelativeDocumentMoniker": "Midterm_EquipmentRental_Group2\\Models\\LoginRequest.cs",
-              "ToolTip": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\Models\\LoginRequest.cs",
-              "RelativeToolTip": "Midterm_EquipmentRental_Group2\\Models\\LoginRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "EquipmentController.cs",
+              "DocumentMoniker": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\Controllers\\EquipmentController.cs",
+              "RelativeDocumentMoniker": "Midterm_EquipmentRental_Group2\\Controllers\\EquipmentController.cs",
+              "ToolTip": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\Controllers\\EquipmentController.cs",
+              "RelativeToolTip": "Midterm_EquipmentRental_Group2\\Controllers\\EquipmentController.cs",
+              "ViewState": "AgIAAJAAAAAAAAAAAAAqwJcAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-12T19:23:23.281Z",
+              "WhenOpened": "2025-10-12T19:19:27.159Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Enums.cs",
-              "DocumentMoniker": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\Models\\Enums.cs",
-              "RelativeDocumentMoniker": "Midterm_EquipmentRental_Group2\\Models\\Enums.cs",
-              "ToolTip": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\Models\\Enums.cs",
-              "RelativeToolTip": "Midterm_EquipmentRental_Group2\\Models\\Enums.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAWAAAAAAAAAA==",
+              "Title": "Rental.cs",
+              "DocumentMoniker": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\Models\\Rental.cs",
+              "RelativeDocumentMoniker": "Midterm_EquipmentRental_Group2\\Models\\Rental.cs",
+              "ToolTip": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\Models\\Rental.cs",
+              "RelativeToolTip": "Midterm_EquipmentRental_Group2\\Models\\Rental.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T19:44:46.475Z",
+              "WhenOpened": "2025-10-12T19:23:30.689Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\Models\\Customer.cs",
+              "RelativeDocumentMoniker": "Midterm_EquipmentRental_Group2\\Models\\Customer.cs",
+              "ToolTip": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\Models\\Customer.cs",
+              "RelativeToolTip": "Midterm_EquipmentRental_Group2\\Models\\Customer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-12T19:22:57.871Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Midterm_EquipmentRental_Group2\\Data\\AppDbContext.cs",
+              "ToolTip": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "Midterm_EquipmentRental_Group2\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAAAkAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-12T19:25:39.72Z",
               "EditorCaption": ""
             },
             {
@@ -202,40 +185,104 @@
               "RelativeDocumentMoniker": "Midterm_EquipmentRental_Group2\\Controllers\\RentalController.cs",
               "ToolTip": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\Controllers\\RentalController.cs",
               "RelativeToolTip": "Midterm_EquipmentRental_Group2\\Controllers\\RentalController.cs",
-              "ViewState": "AgIAAD4BAAAAAAAAAAAAAEkBAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAM4AAAAAAAAAAAAAANwAAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-12T19:19:27.969Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\Data\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "Midterm_EquipmentRental_Group2\\Data\\AppDbContext.cs",
-              "ToolTip": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\Data\\AppDbContext.cs",
-              "RelativeToolTip": "Midterm_EquipmentRental_Group2\\Data\\AppDbContext.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAowBEAAABlAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "CustomerController.cs",
+              "DocumentMoniker": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\Controllers\\CustomerController.cs",
+              "RelativeDocumentMoniker": "Midterm_EquipmentRental_Group2\\Controllers\\CustomerController.cs",
+              "ToolTip": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\Controllers\\CustomerController.cs",
+              "RelativeToolTip": "Midterm_EquipmentRental_Group2\\Controllers\\CustomerController.cs",
+              "ViewState": "AgIAALYAAAAAAAAAAAAqwK4AAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-12T19:25:39.72Z",
+              "WhenOpened": "2025-10-12T19:19:24.918Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
               "Title": "AuthController.cs",
               "DocumentMoniker": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "Midterm_EquipmentRental_Group2\\Controllers\\AuthController.cs",
               "ToolTip": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\Controllers\\AuthController.cs",
               "RelativeToolTip": "Midterm_EquipmentRental_Group2\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAAABcAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAqwEYAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-12T19:19:31.783Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "client",
+              "DocumentMoniker": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\client\\client.esproj",
+              "RelativeDocumentMoniker": "client\\client.esproj",
+              "ToolTip": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\client\\client.esproj",
+              "RelativeToolTip": "client\\client.esproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-10-17T20:15:54.497Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "vite.config.ts",
+              "DocumentMoniker": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\client\\vite.config.ts",
+              "RelativeDocumentMoniker": "client\\vite.config.ts",
+              "ToolTip": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\client\\vite.config.ts",
+              "RelativeToolTip": "client\\vite.config.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-10-17T20:14:50.802Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 10,
+              "Title": "Midterm_EquipmentRental_Group2.csproj",
+              "DocumentMoniker": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2.csproj",
+              "RelativeDocumentMoniker": "Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2.csproj",
+              "ToolTip": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2.csproj",
+              "RelativeToolTip": "Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-12T19:23:46.962Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Enums.cs",
+              "DocumentMoniker": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\Models\\Enums.cs",
+              "RelativeDocumentMoniker": "Midterm_EquipmentRental_Group2\\Models\\Enums.cs",
+              "ToolTip": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\Models\\Enums.cs",
+              "RelativeToolTip": "Midterm_EquipmentRental_Group2\\Models\\Enums.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T19:44:46.475Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\Program.cs",
+              "RelativeDocumentMoniker": "Midterm_EquipmentRental_Group2\\Program.cs",
+              "ToolTip": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\Program.cs",
+              "RelativeToolTip": "Midterm_EquipmentRental_Group2\\Program.cs",
+              "ViewState": "AgIAAHQAAAAAAAAAAAAAAIcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-12T18:29:01.546Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "IEquipmentRepository.cs",
               "DocumentMoniker": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\Repositories\\Interfaces\\IEquipmentRepository.cs",
               "RelativeDocumentMoniker": "Midterm_EquipmentRental_Group2\\Repositories\\Interfaces\\IEquipmentRepository.cs",
@@ -243,12 +290,11 @@
               "RelativeToolTip": "Midterm_EquipmentRental_Group2\\Repositories\\Interfaces\\IEquipmentRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T19:06:43.941Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-15T19:06:43.941Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "IRepository.cs",
               "DocumentMoniker": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\Repositories\\Interfaces\\IRepository.cs",
               "RelativeDocumentMoniker": "Midterm_EquipmentRental_Group2\\Repositories\\Interfaces\\IRepository.cs",
@@ -256,12 +302,11 @@
               "RelativeToolTip": "Midterm_EquipmentRental_Group2\\Repositories\\Interfaces\\IRepository.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAAAAAAUAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-17T16:24:04.374Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-17T16:24:04.374Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 15,
               "Title": "IRentalRepository.cs",
               "DocumentMoniker": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\Repositories\\Interfaces\\IRentalRepository.cs",
               "RelativeDocumentMoniker": "Midterm_EquipmentRental_Group2\\Repositories\\Interfaces\\IRentalRepository.cs",
@@ -269,25 +314,11 @@
               "RelativeToolTip": "Midterm_EquipmentRental_Group2\\Repositories\\Interfaces\\IRentalRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T19:58:12.23Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-15T19:58:12.23Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "EquipmentController.cs",
-              "DocumentMoniker": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\Controllers\\EquipmentController.cs",
-              "RelativeDocumentMoniker": "Midterm_EquipmentRental_Group2\\Controllers\\EquipmentController.cs",
-              "ToolTip": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\Controllers\\EquipmentController.cs",
-              "RelativeToolTip": "Midterm_EquipmentRental_Group2\\Controllers\\EquipmentController.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAQwF4AAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-12T19:19:27.159Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 16,
               "Title": "ICustomerRepository.cs",
               "DocumentMoniker": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\Repositories\\Interfaces\\ICustomerRepository.cs",
               "RelativeDocumentMoniker": "Midterm_EquipmentRental_Group2\\Repositories\\Interfaces\\ICustomerRepository.cs",
@@ -295,12 +326,11 @@
               "RelativeToolTip": "Midterm_EquipmentRental_Group2\\Repositories\\Interfaces\\ICustomerRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T19:54:48.564Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-15T19:54:48.564Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 17,
               "Title": "RentalRepository.cs",
               "DocumentMoniker": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\Repositories\\RentalRepository.cs",
               "RelativeDocumentMoniker": "Midterm_EquipmentRental_Group2\\Repositories\\RentalRepository.cs",
@@ -308,12 +338,11 @@
               "RelativeToolTip": "Midterm_EquipmentRental_Group2\\Repositories\\RentalRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAEAAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T20:09:24.1Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-15T20:09:24.1Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 18,
               "Title": "CustomerRepository.cs",
               "DocumentMoniker": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\Repositories\\CustomerRepository.cs",
               "RelativeDocumentMoniker": "Midterm_EquipmentRental_Group2\\Repositories\\CustomerRepository.cs",
@@ -321,38 +350,11 @@
               "RelativeToolTip": "Midterm_EquipmentRental_Group2\\Repositories\\CustomerRepository.cs",
               "ViewState": "AgIAACQAAAAAAAAAAAAQwDIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T20:03:54.43Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-15T20:03:54.43Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\Program.cs",
-              "RelativeDocumentMoniker": "Midterm_EquipmentRental_Group2\\Program.cs",
-              "ToolTip": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\Program.cs",
-              "RelativeToolTip": "Midterm_EquipmentRental_Group2\\Program.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAAADwAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-12T18:29:01.546Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "CustomerController.cs",
-              "DocumentMoniker": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\Controllers\\CustomerController.cs",
-              "RelativeDocumentMoniker": "Midterm_EquipmentRental_Group2\\Controllers\\CustomerController.cs",
-              "ToolTip": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\Controllers\\CustomerController.cs",
-              "RelativeToolTip": "Midterm_EquipmentRental_Group2\\Controllers\\CustomerController.cs",
-              "ViewState": "AgIAAG8AAAAAAAAAAAAAAHsAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-12T19:19:24.918Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "EquipmentRepository.cs",
               "DocumentMoniker": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\Repositories\\EquipmentRepository.cs",
               "RelativeDocumentMoniker": "Midterm_EquipmentRental_Group2\\Repositories\\EquipmentRepository.cs",
@@ -360,21 +362,7 @@
               "RelativeToolTip": "Midterm_EquipmentRental_Group2\\Repositories\\EquipmentRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-12T19:24:57.978Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Customer.cs",
-              "DocumentMoniker": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\Models\\Customer.cs",
-              "RelativeDocumentMoniker": "Midterm_EquipmentRental_Group2\\Models\\Customer.cs",
-              "ToolTip": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\Models\\Customer.cs",
-              "RelativeToolTip": "Midterm_EquipmentRental_Group2\\Models\\Customer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-12T19:22:57.871Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-12T19:24:57.978Z"
             },
             {
               "$type": "Document",
@@ -423,18 +411,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-10-12T19:29:55.441Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Midterm_EquipmentRental_Group2.csproj",
-              "DocumentMoniker": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2.csproj",
-              "RelativeDocumentMoniker": "Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2.csproj",
-              "ToolTip": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2.csproj",
-              "RelativeToolTip": "Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-12T19:23:46.962Z"
             }
           ]
         }

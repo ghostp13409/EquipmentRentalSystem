@@ -67,17 +67,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Customer"
+                "$ref": "#/components/schemas/CreateCustomerDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Customer"
+                "$ref": "#/components/schemas/CreateCustomerDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Customer"
+                "$ref": "#/components/schemas/CreateCustomerDto"
               }
             }
           }
@@ -130,17 +130,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Customer"
+                "$ref": "#/components/schemas/UpdateCustomerDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Customer"
+                "$ref": "#/components/schemas/UpdateCustomerDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Customer"
+                "$ref": "#/components/schemas/UpdateCustomerDto"
               }
             }
           }
@@ -238,17 +238,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Equipment"
+                "$ref": "#/components/schemas/CreateEquipmentDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Equipment"
+                "$ref": "#/components/schemas/CreateEquipmentDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Equipment"
+                "$ref": "#/components/schemas/CreateEquipmentDto"
               }
             }
           }
@@ -532,17 +532,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Rental"
+                "$ref": "#/components/schemas/IssueRentalRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Rental"
+                "$ref": "#/components/schemas/IssueRentalRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Rental"
+                "$ref": "#/components/schemas/IssueRentalRequest"
               }
             }
           }
@@ -590,27 +590,25 @@
     "schemas": {
       "Category": {
         "enum": [
-          0,
-          1,
-          2,
-          3,
-          4
+          "HeavyMachinery",
+          "PowerTools",
+          "Vehicles",
+          "Safety",
+          "Surveying"
         ],
-        "type": "integer",
-        "format": "int32"
+        "type": "string"
       },
       "Condition": {
         "enum": [
-          0,
-          1,
-          2,
-          3,
-          4
+          "New",
+          "Excellent",
+          "Good",
+          "Fair",
+          "Poor"
         ],
-        "type": "integer",
-        "format": "int32"
+        "type": "string"
       },
-      "Customer": {
+      "CreateCustomerDto": {
         "required": [
           "email",
           "name",
@@ -619,10 +617,6 @@
         ],
         "type": "object",
         "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int32"
-          },
           "name": {
             "minLength": 1,
             "type": "string"
@@ -641,13 +635,36 @@
             "minLength": 6,
             "type": "string",
             "format": "password"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreateEquipmentDto": {
+        "required": [
+          "category",
+          "description",
+          "name"
+        ],
+        "type": "object",
+        "properties": {
+          "name": {
+            "minLength": 1,
+            "type": "string"
           },
-          "role": {
-            "$ref": "#/components/schemas/Role"
+          "description": {
+            "maxLength": 500,
+            "minLength": 1,
+            "type": "string"
           },
-          "createdAt": {
-            "type": "string",
-            "format": "date-time"
+          "category": {
+            "$ref": "#/components/schemas/Category"
+          },
+          "condition": {
+            "$ref": "#/components/schemas/Condition"
+          },
+          "rentalPrice": {
+            "type": "number",
+            "format": "double"
           }
         },
         "additionalProperties": false
@@ -686,10 +703,6 @@
           "isAvailable": {
             "type": "boolean"
           },
-          "imageUrl": {
-            "type": "string",
-            "nullable": true
-          },
           "createdAt": {
             "type": "string",
             "format": "date-time"
@@ -711,6 +724,29 @@
         },
         "additionalProperties": false
       },
+      "IssueRentalRequest": {
+        "required": [
+          "customerId",
+          "dueDate",
+          "equipmentId"
+        ],
+        "type": "object",
+        "properties": {
+          "equipmentId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "customerId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "dueDate": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
       "LoginRequest": {
         "type": "object",
         "properties": {
@@ -725,59 +761,6 @@
         },
         "additionalProperties": false
       },
-      "Rental": {
-        "required": [
-          "customer",
-          "dueDate",
-          "equipment",
-          "issuedAt"
-        ],
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "equipmentId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "equipment": {
-            "$ref": "#/components/schemas/Equipment"
-          },
-          "customerId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "customer": {
-            "$ref": "#/components/schemas/Customer"
-          },
-          "issuedAt": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "dueDate": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "returnedAt": {
-            "type": "string",
-            "format": "date-time",
-            "nullable": true
-          },
-          "conditionOnReturn": {
-            "$ref": "#/components/schemas/Condition"
-          },
-          "notes": {
-            "type": "string",
-            "nullable": true
-          },
-          "status": {
-            "$ref": "#/components/schemas/Status"
-          }
-        },
-        "additionalProperties": false
-      },
       "ReturnRentalRequest": {
         "type": "object",
         "properties": {
@@ -786,7 +769,8 @@
             "format": "int32"
           },
           "conditionOnReturn": {
-            "$ref": "#/components/schemas/Condition"
+            "type": "string",
+            "nullable": true
           },
           "notes": {
             "type": "string",
@@ -795,22 +779,35 @@
         },
         "additionalProperties": false
       },
-      "Role": {
-        "enum": [
-          0,
-          1
+      "UpdateCustomerDto": {
+        "required": [
+          "name",
+          "username"
         ],
-        "type": "integer",
-        "format": "int32"
-      },
-      "Status": {
-        "enum": [
-          0,
-          1,
-          2
-        ],
-        "type": "integer",
-        "format": "int32"
+        "type": "object",
+        "properties": {
+          "name": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "username": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "password": {
+            "type": "string",
+            "nullable": true
+          },
+          "role": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
       }
     }
   }

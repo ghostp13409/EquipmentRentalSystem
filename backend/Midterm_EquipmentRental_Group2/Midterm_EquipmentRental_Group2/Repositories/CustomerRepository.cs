@@ -1,4 +1,5 @@
-﻿using Midterm_EquipmentRental_Group2.Data;
+﻿using Microsoft.EntityFrameworkCore;
+using Midterm_EquipmentRental_Group2.Data;
 using Midterm_EquipmentRental_Group2.Models;
 using Midterm_EquipmentRental_Group2.Repositories.Interfaces;
 
@@ -44,7 +45,10 @@ namespace Midterm_EquipmentRental_Group2.Repositories
 
         public Rental GetActiveRentalByCustomer(int customerId)
         {
-            return _context.Rentals.FirstOrDefault(r => r.CustomerId == customerId && r.ReturnedAt == null);
+            return _context.Rentals
+                .Include(r => r.Equipment)
+                .Include(r => r.Customer)
+                .FirstOrDefault(r => r.CustomerId == customerId && r.ReturnedAt == null);
         }
     }
 }

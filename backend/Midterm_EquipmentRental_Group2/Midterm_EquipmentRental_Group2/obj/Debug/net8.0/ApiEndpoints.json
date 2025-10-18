@@ -9,7 +9,7 @@
     "Parameters": [
       {
         "Name": "request",
-        "Type": "Midterm_EquipmentRental_Group2.Models.LoginRequest",
+        "Type": "Midterm_EquipmentRental_Group2.DTOs.LoginRequest",
         "IsRequired": true
       }
     ],
@@ -44,8 +44,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "customer",
-        "Type": "Midterm_EquipmentRental_Group2.Models.Customer",
+        "Name": "dto",
+        "Type": "Midterm_EquipmentRental_Group2.DTOs.CreateCustomerDto",
         "IsRequired": true
       }
     ],
@@ -82,7 +82,7 @@
       },
       {
         "Name": "customer",
-        "Type": "Midterm_EquipmentRental_Group2.Models.Customer",
+        "Type": "Midterm_EquipmentRental_Group2.DTOs.UpdateCustomerDto",
         "IsRequired": true
       }
     ],
@@ -155,8 +155,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "equipment",
-        "Type": "Midterm_EquipmentRental_Group2.Models.Equipment",
+        "Name": "dto",
+        "Type": "Midterm_EquipmentRental_Group2.DTOs.CreateEquipmentDto",
         "IsRequired": true
       }
     ],
@@ -276,7 +276,7 @@
       },
       {
         "Name": "request",
-        "Type": "Midterm_EquipmentRental_Group2.Models.ExtendRentalRequest",
+        "Type": "Midterm_EquipmentRental_Group2.DTOs.ExtendRentalRequest",
         "IsRequired": true
       }
     ],
@@ -343,8 +343,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "rental",
-        "Type": "Midterm_EquipmentRental_Group2.Models.Rental",
+        "Name": "request",
+        "Type": "Midterm_EquipmentRental_Group2.DTOs.IssueRentalRequest",
         "IsRequired": true
       }
     ],
@@ -370,7 +370,7 @@
     "Parameters": [
       {
         "Name": "request",
-        "Type": "Midterm_EquipmentRental_Group2.Models.ReturnRentalRequest",
+        "Type": "Midterm_EquipmentRental_Group2.DTOs.ReturnRentalRequest",
         "IsRequired": true
       }
     ],

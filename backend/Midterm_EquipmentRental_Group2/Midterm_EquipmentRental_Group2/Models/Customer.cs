@@ -8,7 +8,7 @@ namespace Midterm_EquipmentRental_Group2.Models
         public int Id { get; set; }
         [Required(ErrorMessage = "Please Enter Name.")]
         public string Name { get; set; }
-        [Required(ErrorMessage = "Please Enter Email Address."), EmailAddress(ErrorMessage = "Please Enter Valid Email Address.")]
+        [EmailAddress(ErrorMessage = "Please Enter Valid Email Address.")]
         public string? Email { get; set; }
         [Required(ErrorMessage = "Username is Requierd.")]
         public string Username { get; set; }

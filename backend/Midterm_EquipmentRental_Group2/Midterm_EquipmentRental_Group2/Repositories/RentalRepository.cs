@@ -1,4 +1,5 @@
-﻿using Midterm_EquipmentRental_Group2.Data;
+﻿using Microsoft.EntityFrameworkCore;
+using Midterm_EquipmentRental_Group2.Data;
 using Midterm_EquipmentRental_Group2.Models;
 using Midterm_EquipmentRental_Group2.Repositories.Interfaces;
 
@@ -15,17 +16,27 @@ namespace Midterm_EquipmentRental_Group2.Repositories
 
         public IEnumerable<Rental> GetAll()
         {
-            return _context.Rentals.ToList();
+            return _context.Rentals
+                .Include(r => r.Equipment)
+                .Include(r => r.Customer)
+                .ToList();
         }
 
         public IEnumerable<Rental> GetRentalsByCustomer(int customerId)
         {
-            return _context.Rentals.Where(r => r.CustomerId == customerId).ToList();
+            return _context.Rentals
+                .Where(r => r.CustomerId == customerId)
+                .Include(r => r.Equipment)
+                .Include(r => r.Customer)
+                .ToList();
         }
 
         public Rental? GetById(int id)
         {
-            return _context.Rentals.Find(id);
+            return _context.Rentals
+                .Include(r => r.Equipment)
+                .Include(r => r.Customer)
+                .FirstOrDefault(r => r.Id == id);
         }
         public void Add(Rental rental)
         {
@@ -46,22 +57,38 @@ namespace Midterm_EquipmentRental_Group2.Repositories
 
         public IEnumerable<Rental> GetActiveRentals()
         {
-            return _context.Rentals.Where(r => r.ReturnedAt == null).ToList();
+            return _context.Rentals
+                .Where(r => r.ReturnedAt == null)
+                .Include(r => r.Equipment)
+                .Include(r => r.Customer)
+                .ToList();
         }
 
         public IEnumerable<Rental> GetCompletedRentals()
         {
-            return _context.Rentals.Where(r => r.ReturnedAt != null).ToList();
+            return _context.Rentals
+                .Where(r => r.ReturnedAt != null)
+                .Include(r => r.Equipment)
+                .Include(r => r.Customer)
+                .ToList();
         }
 
         public IEnumerable<Rental> GetOverdueRentals()
         {
-            return _context.Rentals.Where(r => r.DueDate < DateTime.Now && r.ReturnedAt == null).ToList();
+            return _context.Rentals
+                .Where(r => r.DueDate < DateTime.Now && r.ReturnedAt == null)
+                .Include(r => r.Equipment)
+                .Include(r => r.Customer)
+                .ToList();
         }
 
         public IEnumerable<Rental> GetRentalByEquipment(int equipmentId)
         {
-            return _context.Rentals.Where(r => r.EquipmentId == equipmentId).ToList();
+            return _context.Rentals
+                .Where(r => r.EquipmentId == equipmentId)
+                .Include(r => r.Equipment)
+                .Include(r => r.Customer)
+                .ToList();
         }
         public bool HasActiveRental(int customerId)
         {

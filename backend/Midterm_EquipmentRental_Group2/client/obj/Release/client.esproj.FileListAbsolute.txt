@@ -1,0 +1,1 @@
+D:\Work\Projects\EquipmentRentalSystem\backend\Midterm_EquipmentRental_Group2\client\obj\Release\client.esproj.CoreCompileInputs.cache

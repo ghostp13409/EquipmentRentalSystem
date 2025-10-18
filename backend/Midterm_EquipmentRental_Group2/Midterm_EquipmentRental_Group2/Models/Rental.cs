@@ -3,8 +3,8 @@
 namespace Midterm_EquipmentRental_Group2.Models
 {
 
-	public class Rental
-	{
+    public class Rental
+    {
         public int Id { get; set; }
 
         // Foreign Keys
@@ -23,8 +23,8 @@ namespace Midterm_EquipmentRental_Group2.Models
 
         public DateTime? ReturnedAt { get; set; }
 
-        public Condition ConditionOnReturn { get; set; }
-        public string Notes { get; set; }
+        public Condition? ConditionOnReturn { get; set; }
+        public string? Notes { get; set; }
         public Status Status { get; set; }
     }
 }

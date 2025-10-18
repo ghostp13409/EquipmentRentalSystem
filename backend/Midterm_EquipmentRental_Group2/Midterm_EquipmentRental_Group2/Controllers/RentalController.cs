@@ -1,51 +1,52 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Midterm_EquipmentRental_Group2.DTOs;
 using Midterm_EquipmentRental_Group2.Models;
 using Midterm_EquipmentRental_Group2.UnitOfWork;
 using System.Security.Claims;
 
 namespace Midterm_EquipmentRental_Group2.Controllers
 {
-	[Route("api/[controller]")]
-	[ApiController]
-	public class RentalController : ControllerBase
-	{
-		private readonly IUnitOfWork _unitOfWork;
+    [Route("api/[controller]")]
+    [ApiController]
+    public class RentalController : ControllerBase
+    {
+        private readonly IUnitOfWork _unitOfWork;
 
-		public RentalController(IUnitOfWork unitOfWork)
-		{
-			_unitOfWork = unitOfWork;
+        public RentalController(IUnitOfWork unitOfWork)
+        {
+            _unitOfWork = unitOfWork;
         }
 
-		[HttpGet]
-		[Authorize(Roles = "Admin,User")]
-		public IActionResult GetAllRentals()
-		{
-			try
-			{
-				if (IsAdmin())
-				{
-					var rentals = _unitOfWork.Rentals.GetAll();
-					return Ok(rentals);
+        [HttpGet]
+        [Authorize(Roles = "Admin,User")]
+        public IActionResult GetAllRentals()
+        {
+            try
+            {
+                if (IsAdmin())
+                {
+                    var rentals = _unitOfWork.Rentals.GetAll();
+                    return Ok(rentals);
                 }
-				else
-				{
-					var customerId = GetCurrentUserId();
-					var userRentals = _unitOfWork.Rentals.GetRentalsByCustomer(customerId);
-					return Ok(userRentals);
+                else
+                {
+                    var customerId = GetCurrentUserId();
+                    var userRentals = _unitOfWork.Rentals.GetRentalsByCustomer(customerId);
+                    return Ok(userRentals);
                 }
-			}
-			catch (Exception ex)
-			{
-				return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
             }
         }
 
-		[HttpGet("{id}")]
-		[Authorize(Roles = "Admin,User")]
-		public IActionResult GetRentalById(int id)
-		{
+        [HttpGet("{id}")]
+        [Authorize(Roles = "Admin,User")]
+        public IActionResult GetRentalById(int id)
+        {
             try
             {
                 var rental = _unitOfWork.Rentals.GetById(id);
@@ -64,10 +65,10 @@ namespace Midterm_EquipmentRental_Group2.Controllers
             }
         }
 
-		[HttpGet("active")]
-		[Authorize(Roles = "Admin,User")]
-		public IActionResult GetActiveRentals()
-		{
+        [HttpGet("active")]
+        [Authorize(Roles = "Admin,User")]
+        public IActionResult GetActiveRentals()
+        {
             try
             {
                 var activeRentals = _unitOfWork.Rentals.GetAll()
@@ -121,7 +122,7 @@ namespace Midterm_EquipmentRental_Group2.Controllers
             try
             {
                 var overdueRentals = _unitOfWork.Rentals.GetAll()
-                    .Where(r => r.DueDate < DateTime.Now && r.ReturnedAt == null && r.Status == Status.Active)
+                    .Where(r => r.DueDate < DateTime.UtcNow && r.ReturnedAt == null && r.Status == Status.Active)
                     .ToList();
 
                 return Ok(overdueRentals);
@@ -159,53 +160,58 @@ namespace Midterm_EquipmentRental_Group2.Controllers
 
 
         [HttpPost("issue")]
-		[Authorize(Roles = "Admin,User")]
-		public IActionResult IssueEquipment(Rental rental)
-		{
-			try
-			{
-				// Custoemr Exists
-				var customer = _unitOfWork.Customers.GetById(rental.CustomerId);
-				if (customer == null)
-				{
-					return BadRequest(new {message = "Customer not found"});
-				}
-				// Equipment Exists
-				var equipment = _unitOfWork.Equipments.GetById(rental.EquipmentId);
-				if (equipment == null)
-				{
-					return BadRequest(new { message = "Equipment not found" });
+        [Authorize(Roles = "Admin,User")]
+        public IActionResult IssueEquipment(IssueRentalRequest request)
+        {
+            try
+            {
+                // Customer Exists
+                var customer = _unitOfWork.Customers.GetById(request.CustomerId);
+                if (customer == null)
+                {
+                    return BadRequest(new { message = "Customer not found" });
+                }
+                // Equipment Exists
+                var equipment = _unitOfWork.Equipments.GetById(request.EquipmentId);
+                if (equipment == null)
+                {
+                    return BadRequest(new { message = "Equipment not found" });
                 }
 
                 // Equipment Available
-				if (!equipment.IsAvailable)
-				{
-					return BadRequest(new { message = "Equipment is not available for rental" });
+                if (!equipment.IsAvailable)
+                {
+                    return BadRequest(new { message = "Equipment is not available for rental" });
                 }
-				// User already has a rental
-				if (_unitOfWork.Rentals.HasActiveRental(rental.CustomerId))
-				{
-                    return BadRequest(new { message = "You already has an active rental. Return it first." });
+                // User already has a rental
+                if (_unitOfWork.Rentals.HasActiveRental(request.CustomerId))
+                {
+                    return BadRequest(new { message = "You already have an active rental. Return it first." });
                 }
 
-				// Set Rental Deatails
-				rental.IssuedAt = DateTime.UtcNow;
-				rental.Status = Status.Active;
+                // Create Rental
+                var rental = new Rental
+                {
+                    EquipmentId = request.EquipmentId,
+                    CustomerId = request.CustomerId,
+                    IssuedAt = DateTime.UtcNow,
+                    DueDate = DateTime.Parse(request.DueDate).ToUniversalTime(),
+                    Status = Status.Active,
+                    Notes = ""
+                };
 
+                // Add Rental
+                _unitOfWork.Rentals.Add(rental);
 
-				// Add Rental
-				_unitOfWork.Rentals.Add(rental);
+                _unitOfWork.Save();
 
-				_unitOfWork.Save();
+                equipment.IsAvailable = false;
+                _unitOfWork.Save();
 
-				equipment.IsAvailable = false;
-				_unitOfWork.Equipments.Update(equipment);
-				_unitOfWork.Save();
-
-				return CreatedAtAction(nameof(GetRentalById), new { id = rental.Id }, rental);
+                return CreatedAtAction(nameof(GetRentalById), new { id = rental.Id }, rental);
             }
-			catch (Exception ex)
-			{
+            catch (Exception ex)
+            {
                 return StatusCode(500, new { message = "Error creating rental", error = ex.Message });
             }
         }
@@ -231,7 +237,7 @@ namespace Midterm_EquipmentRental_Group2.Controllers
                 // Update rental
                 rental.ReturnedAt = DateTime.UtcNow;
                 rental.Status = Status.Completed;
-                rental.ConditionOnReturn = request.ConditionOnReturn;
+                rental.ConditionOnReturn = Enum.Parse<Condition>(request.ConditionOnReturn);
                 rental.Notes = request.Notes;
 
                 // Update equipment availability
@@ -239,7 +245,6 @@ namespace Midterm_EquipmentRental_Group2.Controllers
                 if (equipment != null)
                 {
                     equipment.IsAvailable = true;
-                    _unitOfWork.Equipments.Update(equipment);
                 }
 
                 _unitOfWork.Rentals.Update(rental);
@@ -272,7 +277,7 @@ namespace Midterm_EquipmentRental_Group2.Controllers
                     return BadRequest(new { message = "New due date must be after current due date" });
 
                 // Update rental
-                rental.DueDate = request.NewDueDate;
+                rental.DueDate = request.NewDueDate.ToUniversalTime();
                 _unitOfWork.Rentals.Update(rental);
                 _unitOfWork.Save();
 
