@@ -11,7 +11,7 @@ const apiClient = axios.create({
   timeout: 30000, // 30 seconds timeout
 });
 
-// Request interceptor - Add JWT token to all requests
+// Add JWT token to all requests
 apiClient.interceptors.request.use(
   (config) => {
     const token = authService.getToken();
@@ -25,7 +25,7 @@ apiClient.interceptors.request.use(
   }
 );
 
-// Response interceptor - Handle 401 (unauthorized)
+// Handle 401
 apiClient.interceptors.response.use(
   (response) => response,
   (error) => {

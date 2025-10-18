@@ -148,7 +148,7 @@ export default function UserDashboard() {
         </div>
       </div>
 
-      {/* My Rental History */}
+      {/* Rental History */}
       <div className="bg-white dark:bg-gray-800 rounded-lg shadow p-6">
         <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">My Rental History</h3>
         <div className="space-y-3">
