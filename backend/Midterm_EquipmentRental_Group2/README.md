@@ -1,5 +1,7 @@
 # Equipment Rental System - Group 2
 
+Video Link: [Equipment Rental System Demo](https://www.loom.com/share/394a869f20324440a825af315a2dd978?sid=f9529f03-1eaf-4349-8bb9-26c0958f15b0)
+
 ### Team Members
 
 - Parth Gajjar
