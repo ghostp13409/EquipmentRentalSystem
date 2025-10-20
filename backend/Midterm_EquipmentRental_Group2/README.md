@@ -2,8 +2,8 @@
 
 ### Team Members
 
-- Parth Gajjar (8959999)
-- Gurnoor Saago ()
+- Parth Gajjar
+- Gurnoor Saago
 
 ## Overview
 
