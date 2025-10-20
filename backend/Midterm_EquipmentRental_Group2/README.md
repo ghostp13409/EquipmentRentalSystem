@@ -1,5 +1,10 @@
 # Equipment Rental System - Group 2
 
+### Team Members
+
+- Parth Gajjar (8959999)
+- Gurnoor Saago ()
+
 ## Overview
 
 The Equipment Rental System is a web application designed to manage the rental of various equipment items to customers. The system provides functionalities for user authentication, customer management, equipment inventory management, and rental processing. It is built using ASP.NET Core for the backend and React with TypeScript for the frontend.
@@ -87,6 +92,9 @@ The backend is built with ASP.NET Core and follows a layered architecture:
 
 ### Frontend Structure
 
+Note: The frontend uses an open source project template as a base and has been customized for this application.
+Source: [TailAdmin](https://github.com/TailAdmin/free-react-tailwind-admin-dashboard)
+
 The frontend is a React application built with TypeScript and Vite, providing a user interface for the Equipment Rental System:
 
 - **src/components/**: Reusable UI components (buttons, modals, forms, auth forms, common utilities)
@@ -105,3 +113,94 @@ The frontend is a React application built with TypeScript and Vite, providing a 
 - Configure CORS
 - Seed More data for testing
 - Configuring React Project in Visual Studio
+
+### Backend Structure
+
+```mermaid
+classDiagram
+    class Controller {
+        +AuthController
+        +CustomerController
+        +EquipmentController
+        +RentalController
+    }
+
+    class Repository {
+        +IAuthRepository
+        +ICustomerRepository
+        +IEquipmentRepository
+        +IRentalRepository
+        +AuthRepository
+        +CustomerRepository
+        +EquipmentRepository
+        +RentalRepository
+    }
+
+    class Model {
+        +Customer
+        +Equipment
+        +Rental
+        +UserRole
+        +EquipmentStatus
+        +RentalStatus
+    }
+
+    class UnitOfWork {
+        +IUnitOfWork
+        +UnitOfWork
+    }
+
+    class DTOs {
+        +AuthDTOs
+        +CustomerDTOs
+        +EquipmentDTOs
+        +RentalDTOs
+    }
+
+    class Data {
+        +AppDbContext
+    }
+
+    Repository --> Model : manages
+    UnitOfWork --> Repository : uses
+    Controller --> DTOs : uses
+    Repository --> Data : interacts with
+    Controller --> UnitOfWork : uses
+```
+
+### Frontend Structure
+
+```mermaid
+classDiagram
+    class Components {
+        +UI
+        +Table
+        +Form
+    }
+    class Pages {
+        +DashboardPage
+        +EquipmentManagementPage
+        +CustomerManagementPage
+        +RentalPage
+        +ProfilePage
+    }
+    class Services {
+        +ApiClient
+        +AuthService
+        +EquipmentService
+        +CustomerService
+        +RentalService
+    }
+    class Context {
+        +AuthContext
+        +ThemeContext
+        +SidebarContext
+    }
+
+    Pages --> Components : uses
+    Pages --> Services : interacts with
+    Components --> Services : calls
+    Pages --> Context : consumes
+
+
+```
