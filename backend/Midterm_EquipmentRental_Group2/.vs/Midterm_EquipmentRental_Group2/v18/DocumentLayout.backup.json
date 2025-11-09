@@ -15,10 +15,6 @@
       "RelativeMoniker": "D:0:0:{4D1B1047-48A3-FB28-784F-3187D099B00C}|Midterm_EquipmentRental_Group2\\Server.csproj|solutionrelative:midterm_equipmentrental_group2\\server.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4D1B1047-48A3-FB28-784F-3187D099B00C}|Midterm_EquipmentRental_Group2\\Server.csproj|d:\\work\\projects\\equipmentrentalsystem\\backend\\midterm_equipmentrental_group2\\midterm_equipmentrental_group2\\docs\\cors_and_react_integration.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
-      "RelativeMoniker": "D:0:0:{4D1B1047-48A3-FB28-784F-3187D099B00C}|Midterm_EquipmentRental_Group2\\Server.csproj|solutionrelative:midterm_equipmentrental_group2\\docs\\cors_and_react_integration.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4D1B1047-48A3-FB28-784F-3187D099B00C}|Midterm_EquipmentRental_Group2\\Server.csproj|d:\\work\\projects\\equipmentrentalsystem\\backend\\midterm_equipmentrental_group2\\midterm_equipmentrental_group2\\server.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{4D1B1047-48A3-FB28-784F-3187D099B00C}|Midterm_EquipmentRental_Group2\\Server.csproj|solutionrelative:midterm_equipmentrental_group2\\server.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
@@ -41,10 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{4D1B1047-48A3-FB28-784F-3187D099B00C}|Midterm_EquipmentRental_Group2\\Server.csproj|d:\\work\\projects\\equipmentrentalsystem\\backend\\midterm_equipmentrental_group2\\midterm_equipmentrental_group2\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4D1B1047-48A3-FB28-784F-3187D099B00C}|Midterm_EquipmentRental_Group2\\Server.csproj|solutionrelative:midterm_equipmentrental_group2\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D1B1047-48A3-FB28-784F-3187D099B00C}|Midterm_EquipmentRental_Group2\\Server.csproj|d:\\work\\projects\\equipmentrentalsystem\\backend\\midterm_equipmentrental_group2\\midterm_equipmentrental_group2\\docs\\assignment.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
-      "RelativeMoniker": "D:0:0:{4D1B1047-48A3-FB28-784F-3187D099B00C}|Midterm_EquipmentRental_Group2\\Server.csproj|solutionrelative:midterm_equipmentrental_group2\\docs\\assignment.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4D1B1047-48A3-FB28-784F-3187D099B00C}|Midterm_EquipmentRental_Group2\\Server.csproj|d:\\work\\projects\\equipmentrentalsystem\\backend\\midterm_equipmentrental_group2\\midterm_equipmentrental_group2\\controllers\\equipmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -105,6 +97,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{4D1B1047-48A3-FB28-784F-3187D099B00C}|Midterm_EquipmentRental_Group2\\Server.csproj|d:\\work\\projects\\equipmentrentalsystem\\backend\\midterm_equipmentrental_group2\\midterm_equipmentrental_group2\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{4D1B1047-48A3-FB28-784F-3187D099B00C}|Midterm_EquipmentRental_Group2\\Server.csproj|solutionrelative:midterm_equipmentrental_group2\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\docs\\assignment.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Midterm_EquipmentRental_Group2\\docs\\assignment.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\docs\\CORS_AND_REACT_INTEGRATION.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Midterm_EquipmentRental_Group2\\docs\\CORS_AND_REACT_INTEGRATION.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
     }
   ],
   "DocumentGroupContainers": [
@@ -129,12 +129,11 @@
               "ToolTip": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\Server.csproj",
               "RelativeToolTip": "Midterm_EquipmentRental_Group2\\Server.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-18T15:05:02.453Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-18T15:05:02.453Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "Midterm_EquipmentRental_Group2\\Data\\AppDbContext.cs",
@@ -146,7 +145,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "RentalController.cs",
               "DocumentMoniker": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\Controllers\\RentalController.cs",
               "RelativeDocumentMoniker": "Midterm_EquipmentRental_Group2\\Controllers\\RentalController.cs",
@@ -158,7 +157,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
               "Title": "CustomerController.cs",
               "DocumentMoniker": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\Controllers\\CustomerController.cs",
               "RelativeDocumentMoniker": "Midterm_EquipmentRental_Group2\\Controllers\\CustomerController.cs",
@@ -170,7 +169,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 8,
               "Title": "AuthController.cs",
               "DocumentMoniker": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "Midterm_EquipmentRental_Group2\\Controllers\\AuthController.cs",
@@ -182,7 +181,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Server.csproj",
               "DocumentMoniker": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\Server.csproj",
               "RelativeDocumentMoniker": "Midterm_EquipmentRental_Group2\\Server.csproj",
@@ -194,7 +193,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 24,
               "Title": "assignment.md",
               "DocumentMoniker": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\docs\\assignment.md",
               "RelativeDocumentMoniker": "Midterm_EquipmentRental_Group2\\docs\\assignment.md",
@@ -214,8 +213,7 @@
               "RelativeToolTip": "client\\Client.esproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-10-17T20:15:54.497Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-17T20:15:54.497Z"
             },
             {
               "$type": "Document",
@@ -232,7 +230,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 25,
               "Title": "CORS_AND_REACT_INTEGRATION.md",
               "DocumentMoniker": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\docs\\CORS_AND_REACT_INTEGRATION.md",
               "RelativeDocumentMoniker": "Midterm_EquipmentRental_Group2\\docs\\CORS_AND_REACT_INTEGRATION.md",
@@ -244,7 +242,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 9,
               "Title": "EquipmentController.cs",
               "DocumentMoniker": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\Controllers\\EquipmentController.cs",
               "RelativeDocumentMoniker": "Midterm_EquipmentRental_Group2\\Controllers\\EquipmentController.cs",
@@ -256,7 +254,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 10,
               "Title": "Rental.cs",
               "DocumentMoniker": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\Models\\Rental.cs",
               "RelativeDocumentMoniker": "Midterm_EquipmentRental_Group2\\Models\\Rental.cs",
@@ -268,7 +266,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 11,
               "Title": "Equipment.cs",
               "DocumentMoniker": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\Models\\Equipment.cs",
               "RelativeDocumentMoniker": "Midterm_EquipmentRental_Group2\\Models\\Equipment.cs",
@@ -280,7 +278,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "vite.config.ts",
               "DocumentMoniker": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\client\\vite.config.ts",
               "RelativeDocumentMoniker": "client\\vite.config.ts",
@@ -292,7 +290,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 12,
               "Title": "Enums.cs",
               "DocumentMoniker": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\Models\\Enums.cs",
               "RelativeDocumentMoniker": "Midterm_EquipmentRental_Group2\\Models\\Enums.cs",
@@ -304,7 +302,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 13,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\Program.cs",
               "RelativeDocumentMoniker": "Midterm_EquipmentRental_Group2\\Program.cs",
@@ -316,7 +314,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 14,
               "Title": "IEquipmentRepository.cs",
               "DocumentMoniker": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\Repositories\\Interfaces\\IEquipmentRepository.cs",
               "RelativeDocumentMoniker": "Midterm_EquipmentRental_Group2\\Repositories\\Interfaces\\IEquipmentRepository.cs",
@@ -328,7 +326,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 15,
               "Title": "IRepository.cs",
               "DocumentMoniker": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\Repositories\\Interfaces\\IRepository.cs",
               "RelativeDocumentMoniker": "Midterm_EquipmentRental_Group2\\Repositories\\Interfaces\\IRepository.cs",
@@ -340,7 +338,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 16,
               "Title": "IRentalRepository.cs",
               "DocumentMoniker": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\Repositories\\Interfaces\\IRentalRepository.cs",
               "RelativeDocumentMoniker": "Midterm_EquipmentRental_Group2\\Repositories\\Interfaces\\IRentalRepository.cs",
@@ -352,7 +350,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 17,
               "Title": "ICustomerRepository.cs",
               "DocumentMoniker": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\Repositories\\Interfaces\\ICustomerRepository.cs",
               "RelativeDocumentMoniker": "Midterm_EquipmentRental_Group2\\Repositories\\Interfaces\\ICustomerRepository.cs",
@@ -364,7 +362,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 18,
               "Title": "RentalRepository.cs",
               "DocumentMoniker": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\Repositories\\RentalRepository.cs",
               "RelativeDocumentMoniker": "Midterm_EquipmentRental_Group2\\Repositories\\RentalRepository.cs",
@@ -376,7 +374,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 19,
               "Title": "CustomerRepository.cs",
               "DocumentMoniker": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\Repositories\\CustomerRepository.cs",
               "RelativeDocumentMoniker": "Midterm_EquipmentRental_Group2\\Repositories\\CustomerRepository.cs",
@@ -388,7 +386,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 20,
               "Title": "EquipmentRepository.cs",
               "DocumentMoniker": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\Repositories\\EquipmentRepository.cs",
               "RelativeDocumentMoniker": "Midterm_EquipmentRental_Group2\\Repositories\\EquipmentRepository.cs",
@@ -400,7 +398,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 21,
               "Title": "IUnitOfWork.cs",
               "DocumentMoniker": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\UnitOfWork\\IUnitOfWork.cs",
               "RelativeDocumentMoniker": "Midterm_EquipmentRental_Group2\\UnitOfWork\\IUnitOfWork.cs",
@@ -412,7 +410,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 22,
               "Title": "UnitOfWork.cs",
               "DocumentMoniker": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\UnitOfWork\\UnitOfWork.cs",
               "RelativeDocumentMoniker": "Midterm_EquipmentRental_Group2\\UnitOfWork\\UnitOfWork.cs",
@@ -424,7 +422,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 23,
               "Title": "launchSettings.json",
               "DocumentMoniker": "D:\\Work\\Projects\\EquipmentRentalSystem\\backend\\Midterm_EquipmentRental_Group2\\Midterm_EquipmentRental_Group2\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Midterm_EquipmentRental_Group2\\Properties\\launchSettings.json",
