@@ -1,10 +1,8 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.IdentityModel.Tokens;
+using Microsoft.AspNetCore.Authentication;
 using Midterm_EquipmentRental_Group2.Data;
-using Midterm_EquipmentRental_Group2.DTOs;
-using Midterm_EquipmentRental_Group2.Models;
-using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 
 namespace Midterm_EquipmentRental_Group2.Controllers
@@ -13,65 +11,76 @@ namespace Midterm_EquipmentRental_Group2.Controllers
     [ApiController]
     public class AuthController : ControllerBase
     {
-        AppDbContext _context;
+        private readonly AppDbContext _context;
 
         public AuthController(AppDbContext context)
         {
             _context = context;
         }
 
-        [HttpPost("login")]
-        public IActionResult Login([FromBody] LoginRequest request)
+        // Challenge endpoint - redirects to Google OAuth
+        [HttpGet("google-login")]
+        public IActionResult Login()
         {
-            try
+            return Challenge(new AuthenticationProperties
             {
-                var customer = _context.Customers.FirstOrDefault(c => c.Username == request.Username && c.Password == request.Password);
-                if (customer == null)
+                RedirectUri = "/oauth/callback" // This will be handled by the frontend
+            }, "Google");
+        }
+
+        // Get current user info
+        [HttpGet("me")]
+        [Authorize]
+        public IActionResult GetCurrentUser()
+        {
+            var email = User.FindFirst(ClaimTypes.Email)?.Value;
+            var role = User.FindFirst(ClaimTypes.Role)?.Value;
+            var userId = User.FindFirst("UserId")?.Value;
+            var name = User.FindFirst(ClaimTypes.Name)?.Value ?? email;
+
+            return Ok(new
+            {
+                id = userId,
+                email = email,
+                name = name,
+                role = role
+            });
+        }
+
+        // Check authentication status
+        [HttpGet("check")]
+        public IActionResult CheckAuth()
+        {
+            if (User.Identity?.IsAuthenticated == true)
+            {
+                var email = User.FindFirst(ClaimTypes.Email)?.Value;
+                var role = User.FindFirst(ClaimTypes.Role)?.Value;
+                var userId = User.FindFirst("UserId")?.Value;
+                var name = User.FindFirst(ClaimTypes.Name)?.Value ?? email;
+
+                return Ok(new
                 {
-                    return Unauthorized("Invalid username or password");
-                }
-                // In a real application, generate a JWT or similar token here
-                var token = GenerateJwtToken(customer);
-                return Ok(new { Token = token, Role = customer.Role, UserId = customer.Id, Name = customer.Name, Email = customer.Email });
+                    isAuthenticated = true,
+                    user = new
+                    {
+                        id = userId,
+                        email = email,
+                        name = name,
+                        role = role
+                    }
+                });
             }
-            catch (Exception ex)
-            {
-                return StatusCode(500, new { message = "Error during login", error = ex.Message });
-            }
+
+            return Ok(new { isAuthenticated = false });
         }
 
-        [HttpGet("users")]
-        public IActionResult GetUsers()
+        // Logout endpoint
+        [HttpPost("logout")]
+        [Authorize]
+        public async Task<IActionResult> Logout()
         {
-            try
-            {
-                var customers = _context.Customers.Select(u => new { u.Id, u.Username, u.Role }).ToList();
-                return Ok(customers);
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, new { message = "Error retrieving users", error = ex.Message });
-            }
-        }
-
-        private object GenerateJwtToken(Customer customer)
-        {
-            var claims = new[]
-            {
-                new Claim("UserId", customer.Id.ToString()),
-                new Claim(ClaimTypes.Name, customer.Username),
-                new Claim(ClaimTypes.Role, customer.Role.ToString()),
-            };
-
-            var key = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes("YourSecretKeyHere1234567890Something"));
-            var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
-            var token = new JwtSecurityToken(
-                //issuer: "yourdomain.com",
-                //audience: "yourdomain.com",
-                claims: claims,
-                expires: DateTime.Now.AddMinutes(30).AddYears(30),
-                signingCredentials: creds);
-            return new JwtSecurityTokenHandler().WriteToken(token);
+            await HttpContext.SignOutAsync();
+            return Ok(new { message = "Logged out successfully" });
         }
     }
 }

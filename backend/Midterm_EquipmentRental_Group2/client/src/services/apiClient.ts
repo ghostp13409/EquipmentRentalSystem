@@ -9,6 +9,7 @@ const apiClient = axios.create({
     'Content-Type': 'application/json',
   },
   timeout: 30000, // 30 seconds timeout
+  withCredentials: true, // Enable cookies for Google OAuth
 });
 
 // Add JWT token to all requests
@@ -28,10 +29,12 @@ apiClient.interceptors.request.use(
 // Handle 401
 apiClient.interceptors.response.use(
   (response) => response,
-  (error) => {
+  async (error) => {
     if (error.response?.status === 401) {
-      // Token expired or invalid
+      // User is not authenticated
+      // Clear any local storage
       authService.logout();
+      // Redirect to sign in page
       window.location.href = '/signin';
     }
     return Promise.reject(error);

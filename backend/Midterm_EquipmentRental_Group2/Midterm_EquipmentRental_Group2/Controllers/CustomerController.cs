@@ -148,11 +148,19 @@ namespace Midterm_EquipmentRental_Group2.Controllers
 			{
 				currentUser.Name = customer.Name;
 				currentUser.Email = customer.Email;
-				currentUser.Username = customer.Username;
+
+				// Only update username if provided (OAuth users might not have username)
+				if (!string.IsNullOrEmpty(customer.Username))
+				{
+					currentUser.Username = customer.Username;
+				}
+
+				// Only update password if provided (OAuth users don't have passwords)
 				if (!string.IsNullOrEmpty(customer.Password))
 				{
 					currentUser.Password = customer.Password; // Note: In production, hash the password
 				}
+
 				if (IsAdmin())
 				{
 					currentUser.Role = Enum.Parse<Role>(customer.Role);

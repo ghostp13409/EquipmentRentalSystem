@@ -1,4 +1,4 @@
-import axios, { AxiosError } from 'axios';
+import axios from 'axios';
 import { API_BASE_URL } from '../config/api';
 
 export interface LoginRequest {
@@ -14,20 +14,69 @@ export interface LoginResponse {
   email?: string;
 }
 
+// For Google OAuth
+export interface GoogleUser {
+  id: string;
+  email: string;
+  name: string;
+  role: string;
+}
+
 export const authService = {
-  login: async (credentials: LoginRequest): Promise<LoginResponse> => {
+  // Old Login
+  //login: async (credentials: LoginRequest): Promise<LoginResponse> => {
+  //  try {
+  //    const response = await axios.post(`${API_BASE_URL}/auth/login`, credentials);
+  //    return response.data;
+  //  } catch (error) {
+  //    if (axios.isAxiosError(error)) {
+  //      throw error.response?.data || 'Login failed';
+  //    }
+  //    throw 'Login failed';
+  //  }
+  //},
+
+  // Init Google OAuth login
+  loginWithGoogle: () => {
+    window.location.href = `${API_BASE_URL}/auth/google-login`;
+  },
+
+  // Check Auth
+  checkAuth: async (): Promise<{isAuthenticated: boolean, user?: GoogleUser }> => {
     try {
-      const response = await axios.post(`${API_BASE_URL}/auth/login`, credentials);
+      const response = await axios.get(`${API_BASE_URL}/auth/check`, {
+        withCredentials: true,
+      });
       return response.data;
     } catch (error) {
-      if (axios.isAxiosError(error)) {
-        throw error.response?.data || 'Login failed';
-      }
-      throw 'Login failed';
+      console.error('Failed to check auth:', error);
+      return { isAuthenticated: false };
+    }
+  },
+  
+
+  // Get current user info
+  getCurrentUser: async (): Promise<GoogleUser | null> => {
+    try {
+      const response = await axios.get(`${API_BASE_URL}/auth/me`, {
+        withCredentials: true,
+      });
+      return response.data;
+    } catch (error) {
+      console.error('Failed to get current user:', error);
+      return null;
     }
   },
 
-  logout: () => {
+
+  logout: async () => {
+    try {
+      await axios.post(`${API_BASE_URL}/auth/logout`, {}, {
+        withCredentials: true,
+      });
+    } catch (error) {
+      console.error('Failed to logout:', error);
+    }
     localStorage.removeItem('token');
     localStorage.removeItem('role');
     localStorage.removeItem('userId');

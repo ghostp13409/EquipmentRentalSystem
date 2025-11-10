@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router";
 import SignIn from "./pages/AuthPages/SignIn";
 import SignUp from "./pages/AuthPages/SignUp";
+import OAuthCallback from "./pages/AuthPages/OAuthCallback";
 import NotFound from "./pages/OtherPage/NotFound";
 import TestConnection from "./components/TestConnection";
 import AppLayout from "./layout/AppLayout";
@@ -29,6 +30,7 @@ export default function App() {
           {/* Public Routes */}
           <Route path="/signin" element={<SignIn />} />
           <Route path="/signup" element={<SignUp />} />
+          <Route path="/oauth/callback" element={<OAuthCallback />} />
           <Route path="/test-connection" element={<TestConnection />} />
 
           {/* Protected Routes */}

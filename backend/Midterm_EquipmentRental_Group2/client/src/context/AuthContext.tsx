@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
-import { authService } from '../services/authService';
+import { authService, GoogleUser } from '../services/authService';
 
 interface AuthContextType {
   isAuthenticated: boolean;
@@ -7,10 +7,12 @@ interface AuthContextType {
   userId: number | null;
   name: string | null;
   email: string | null;
-  login: (username: string, password: string) => Promise<void>;
-  logout: () => void;
+  //login: (username: string, password: string) => Promise<void>;
+  loginWithGoogle: () => void; // Google OAuth login
+  logout: () => Promise<void>;
   isAdmin: () => boolean;
   isLoading: boolean;
+  checkAuth: () => Promise<{ isAuthenticated: boolean; user?: GoogleUser }>;
 }
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
@@ -35,42 +37,118 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
   const [email, setEmail] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(true);
 
+  // Check authentication status on app load
   useEffect(() => {
-    // Check if user is already authenticated on app start
-    const token = authService.getToken();
-    const storedRole = authService.getRole();
-    const storedUserId = authService.getUserId();
-    const storedName = authService.getName();
-    const storedEmail = authService.getEmail();
+    const checkAuthStatus = async () => {
+      try {
+        const authResult = await authService.checkAuth();
+        if (authResult.isAuthenticated && authResult.user) {
+          setIsAuthenticated(true);
+          setRole(authResult.user.role);
+          setUserId(authResult.user.id ? parseInt(authResult.user.id) : null);
+          setName(authResult.user.name || null);
+          setEmail(authResult.user.email || null);
+        } else {
+          const token = authService.getToken();
+          const storedRole = authService.getRole();
+          const storedUserId = authService.getUserId();
+          const storedName = authService.getName();
+          const storedEmail = authService.getEmail();
 
-    if (token && storedRole) {
-      setIsAuthenticated(true);
-      setRole(storedRole);
-      setUserId(storedUserId);
-      setName(storedName);
-      setEmail(storedEmail);
-    }
-    setIsLoading(false);
+          if (token && storedRole) {
+            setIsAuthenticated(true);
+            setRole(storedRole);
+            setUserId(storedUserId);
+            setName(storedName);
+            setEmail(storedEmail);
+          }
+        }
+      } catch (error) {
+        console.error('Error checking auth status:', error);
+        // check localStorage
+        const token = authService.getToken();
+        const storedRole = authService.getRole();
+        if (token && storedRole) {
+          setIsAuthenticated(true);
+          setRole(storedRole);
+          setUserId(authService.getUserId());
+          setName(authService.getName());
+          setEmail(authService.getEmail());
+        }
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    checkAuthStatus();
   }, []);
 
-  const login = async (username: string, password: string) => {
-    const response = await authService.login({ username, password });
-    authService.setAuthData(response.token, response.role, response.userId, response.name, response.email);
 
-    setIsAuthenticated(true);
-    setRole(response.role);
-    setUserId(response.userId || null);
-    setName(response.name || null);
-    setEmail(response.email || null);
+  useEffect(() => {
+    const handleOAuthCallback = async () => {
+      // Check if on callback page or just authenticated
+      const urlParams = new URLSearchParams(window.location.search);
+      const isCallback = urlParams.has('code') || window.location.pathname.includes('callback');
+      
+      if (isCallback) {
+        try {
+          setTimeout(async () => {
+            const authResult = await authService.checkAuth();
+            if (authResult.isAuthenticated && authResult.user) {
+              setIsAuthenticated(true);
+              setRole(authResult.user.role);
+              setUserId(authResult.user.id ? parseInt(authResult.user.id) : null);
+              setName(authResult.user.name || null);
+              setEmail(authResult.user.email || null);
+              
+              // Redirect
+                window.location.href = '/';
+            }
+          }, 500);
+        } catch (error) {
+          console.error('Error handling OAuth callback:', error);
+        }
+      }
+    };
+
+    handleOAuthCallback();
+  }, []);
+
+  // Old Login
+  //const login = async (username: string, password: string) => {
+  //  const response = await authService.login({ username, password });
+  //  authService.setAuthData(response.token, response.role, response.userId, response.name, response.email);
+
+  //  setIsAuthenticated(true);
+  //  setRole(response.role);
+  //  setUserId(response.userId || null);
+  //  setName(response.name || null);
+  //  setEmail(response.email || null);
+  //};
+
+  // Google OAuth login
+  const loginWithGoogle = () => {
+    authService.loginWithGoogle();
   };
 
-  const logout = () => {
-    authService.logout();
-    setIsAuthenticated(false);
-    setRole(null);
-    setUserId(null);
-    setName(null);
-    setEmail(null);
+  const logout = async () => {
+    try {
+      await authService.logout();
+    } catch (error) {
+      console.error('Logout error:', error);
+    } finally {
+      // Clear state
+      setIsAuthenticated(false);
+      setRole(null);
+      setUserId(null);
+      setName(null);
+      setEmail(null);
+    }
+  };
+
+  // check auth status
+  const checkAuth = async () => {
+    return await authService.checkAuth();
   };
 
   const isAdmin = () => {
@@ -83,10 +161,12 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
     userId,
     name,
     email,
-    login,
+    //login,
+    loginWithGoogle,
     logout,
     isAdmin,
     isLoading,
+    checkAuth,
   };
 
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>;
