@@ -3,7 +3,6 @@ import SignIn from "./pages/AuthPages/SignIn";
 import SignUp from "./pages/AuthPages/SignUp";
 import OAuthCallback from "./pages/AuthPages/OAuthCallback";
 import NotFound from "./pages/OtherPage/NotFound";
-import TestConnection from "./components/TestConnection";
 import AppLayout from "./layout/AppLayout";
 import { ScrollToTop } from "./components/common/ScrollToTop";
 import Home from "./pages/Dashboard/Home";
@@ -31,7 +30,6 @@ export default function App() {
           <Route path="/signin" element={<SignIn />} />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/oauth/callback" element={<OAuthCallback />} />
-          <Route path="/test-connection" element={<TestConnection />} />
 
           {/* Protected Routes */}
           <Route element={<ProtectedRoute><AppLayout /></ProtectedRoute>}>

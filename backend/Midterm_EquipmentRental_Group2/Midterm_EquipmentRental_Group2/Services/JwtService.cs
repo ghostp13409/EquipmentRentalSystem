@@ -1,4 +1,5 @@
 ﻿using Microsoft.IdentityModel.Tokens;
+using Midterm_EquipmentRental_Group2.Data;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 
@@ -20,11 +21,14 @@ namespace Midterm_EquipmentRental_Group2.Services
             var key = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes(_configuration["Jwt:SigningKey"]));
             var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
             var now = DateTime.UtcNow;
+
+
+
             var claims = new List<Claim>
             {
                 new (ClaimTypes.NameIdentifier, user.FindFirstValue(ClaimTypes.NameIdentifier)),
                 new (ClaimTypes.Name, user.Identity.Name),
-                new (ClaimTypes.Email, user.FindFirstValue(ClaimTypes.Email))
+                new (ClaimTypes.Email, user.FindFirstValue(ClaimTypes.Email)),
             };
 
             foreach (var role in user.FindAll(ClaimTypes.Role).Select(c => c.Value).Distinct())

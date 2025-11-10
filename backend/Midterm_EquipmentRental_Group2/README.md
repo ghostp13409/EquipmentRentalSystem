@@ -1,3 +1,5 @@
+# Assignment 3
+
 # Equipment Rental System - Group 2
 
 Video Link: [Equipment Rental System Demo](https://www.loom.com/share/394a869f20324440a825af315a2dd978?sid=f9529f03-1eaf-4349-8bb9-26c0958f15b0)
@@ -6,6 +8,85 @@ Video Link: [Equipment Rental System Demo](https://www.loom.com/share/394a869f20
 
 - Parth Gajjar
 - Gurnoor Saago
+
+## Setup Instructions:
+
+- Get Google OAuth Client ID and Client Secret from Google Cloud Console.
+  - Set Authorized Redirect URI to `Server-Base-URL/signin-oidc` (e.g., `https://localhost:7250/signin-oidc` for local).
+  - Set Authorized JavaScript origins to `Client-Base-URL` (e.g., `http://localhost:3000` for local).
+- Update `appsettings.json` in the Server project with your Google OAuth credentials.
+
+### Default Admin Emails:
+
+- gajjarparth@gmail.com
+- sagoolul@gmail.com
+- more email can be addeded in appsettings.json under "AuthDemo:AdminEmails"
+
+### Auth Logic Diagram:
+
+```mermaid
+classDiagram
+    class GoogleOAuth {
+        +AuthenticateUser()
+        +GetClaims()
+    }
+
+    class RoleClaimsTransformer {
+        +TransformAsync(principal)
+        +AddRoleClaim(email)
+        +CreateOrUpdateCustomer()
+    }
+
+    class AuthController {
+        +Login() : IActionResult
+        +GetCurrentUser() : IActionResult
+        +CheckAuth() : IActionResult
+        +Logout() : Task<IActionResult>
+    }
+
+    class Customer {
+        +Id : int
+        +Name : string
+        +Email : string
+        +Role : Role
+        +ExternalProvider : string
+        +ExternalId : string
+        +CreatedAt : DateTime
+    }
+
+    class AuthService {
+        +loginWithGoogle()
+        +checkAuth() : Promise
+        +getCurrentUser() : Promise
+        +logout() : Promise
+        +getToken() : string
+        +setAuthData(token, role, ...)
+    }
+
+    class AuthContext {
+        +isAuthenticated : boolean
+        +role : string
+        +userId : number
+        +loginWithGoogle()
+        +logout() : Promise
+        +checkAuth() : Promise
+        +isAdmin() : boolean
+    }
+
+    class SignInForm {
+        +handleGoogleLogin()
+        +render()
+    }
+
+    GoogleOAuth --> RoleClaimsTransformer : provides claims
+    RoleClaimsTransformer --> Customer : creates/updates
+    AuthController --> RoleClaimsTransformer : uses for auth
+    AuthService --> AuthController : calls API
+    AuthContext --> AuthService : uses
+    SignInForm --> AuthContext : triggers login
+```
+
+### Video Demo link: [Demo Video](https://www.loom.com/share/394a869f20324440a825af315a2dd978?sid=f9529f03-1eaf-4349-8bb9-26c0958f15b0)
 
 ## Overview
 

@@ -23,7 +23,7 @@ export default function AuthLayout({
                   src="/images/logo/logo-icon.svg"
                   alt="Logo"
                 />
-                <span className="ml-2 text-gray-900 dark:text-white">Equipment Rentals System</span>
+                <span className="ml-2  text-white">Equipment Rentals System</span>
               </Link>
               <p className="text-center text-gray-400 dark:text-white/60">
                 Midterm Project by Group 2<br />

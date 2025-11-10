@@ -10,8 +10,6 @@ namespace Midterm_EquipmentRental_Group2.Data
         public DbSet<Equipment> Equipments { get; set; }
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Rental> Rentals { get; set; }
-        public DbSet<AppUser> AppUsers { get; set; }
-
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             // Seed Admin
