@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="backend/Server.csproj" />
+  <Project Path="client/Client.esproj" />
+</Solution>
